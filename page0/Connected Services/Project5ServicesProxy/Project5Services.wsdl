@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="Project5Services" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://webstrar25.fulton.asu.edu/Page1/Project5Services.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://webstrar25.fulton.asu.edu/Page1/Project5Services.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://webstrar25.fulton.asu.edu/Page1/Project5Services.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IProject5Services_AddMember_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddMember" />
+  </wsdl:message>
+  <wsdl:message name="IProject5Services_AddMember_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProject5Services_AddStaffMember_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddStaffMember" />
+  </wsdl:message>
+  <wsdl:message name="IProject5Services_AddStaffMember_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddStaffMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProject5Services_MemberExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:MemberExists" />
+  </wsdl:message>
+  <wsdl:message name="IProject5Services_MemberExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MemberExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProject5Services_StaffExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:StaffExists" />
+  </wsdl:message>
+  <wsdl:message name="IProject5Services_StaffExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StaffExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProject5Services_SearchForWsdl_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchForWsdl" />
+  </wsdl:message>
+  <wsdl:message name="IProject5Services_SearchForWsdl_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchForWsdlResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProject5Services_WsOperations_InputMessage">
+    <wsdl:part name="parameters" element="tns:WsOperations" />
+  </wsdl:message>
+  <wsdl:message name="IProject5Services_WsOperations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WsOperationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProject5Services_WsOperationNames_InputMessage">
+    <wsdl:part name="parameters" element="tns:WsOperationNames" />
+  </wsdl:message>
+  <wsdl:message name="IProject5Services_WsOperationNames_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WsOperationNamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProject5Services_WsOperationInput_InputMessage">
+    <wsdl:part name="parameters" element="tns:WsOperationInput" />
+  </wsdl:message>
+  <wsdl:message name="IProject5Services_WsOperationInput_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WsOperationInputResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProject5Services_WsOperationReturn_InputMessage">
+    <wsdl:part name="parameters" element="tns:WsOperationReturn" />
+  </wsdl:message>
+  <wsdl:message name="IProject5Services_WsOperationReturn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WsOperationReturnResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProject5Services_AddToList_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddToList" />
+  </wsdl:message>
+  <wsdl:message name="IProject5Services_AddToList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddToListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProject5Services_LoadMyList_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoadMyList" />
+  </wsdl:message>
+  <wsdl:message name="IProject5Services_LoadMyList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoadMyListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IProject5Services_LoadStaff_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoadStaff" />
+  </wsdl:message>
+  <wsdl:message name="IProject5Services_LoadStaff_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoadStaffResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IProject5Services">
+    <wsdl:operation name="AddMember">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProject5Services/AddMember" message="tns:IProject5Services_AddMember_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProject5Services/AddMemberResponse" message="tns:IProject5Services_AddMember_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddStaffMember">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProject5Services/AddStaffMember" message="tns:IProject5Services_AddStaffMember_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProject5Services/AddStaffMemberResponse" message="tns:IProject5Services_AddStaffMember_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MemberExists">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProject5Services/MemberExists" message="tns:IProject5Services_MemberExists_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProject5Services/MemberExistsResponse" message="tns:IProject5Services_MemberExists_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StaffExists">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProject5Services/StaffExists" message="tns:IProject5Services_StaffExists_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProject5Services/StaffExistsResponse" message="tns:IProject5Services_StaffExists_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchForWsdl">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProject5Services/SearchForWsdl" message="tns:IProject5Services_SearchForWsdl_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProject5Services/SearchForWsdlResponse" message="tns:IProject5Services_SearchForWsdl_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WsOperations">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProject5Services/WsOperations" message="tns:IProject5Services_WsOperations_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProject5Services/WsOperationsResponse" message="tns:IProject5Services_WsOperations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WsOperationNames">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProject5Services/WsOperationNames" message="tns:IProject5Services_WsOperationNames_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProject5Services/WsOperationNamesResponse" message="tns:IProject5Services_WsOperationNames_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WsOperationInput">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProject5Services/WsOperationInput" message="tns:IProject5Services_WsOperationInput_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProject5Services/WsOperationInputResponse" message="tns:IProject5Services_WsOperationInput_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WsOperationReturn">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProject5Services/WsOperationReturn" message="tns:IProject5Services_WsOperationReturn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProject5Services/WsOperationReturnResponse" message="tns:IProject5Services_WsOperationReturn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddToList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProject5Services/AddToList" message="tns:IProject5Services_AddToList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProject5Services/AddToListResponse" message="tns:IProject5Services_AddToList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadMyList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProject5Services/LoadMyList" message="tns:IProject5Services_LoadMyList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProject5Services/LoadMyListResponse" message="tns:IProject5Services_LoadMyList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadStaff">
+      <wsdl:input wsaw:Action="http://tempuri.org/IProject5Services/LoadStaff" message="tns:IProject5Services_LoadStaff_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IProject5Services/LoadStaffResponse" message="tns:IProject5Services_LoadStaff_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IProject5Services" type="tns:IProject5Services">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddMember">
+      <soap:operation soapAction="http://tempuri.org/IProject5Services/AddMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddStaffMember">
+      <soap:operation soapAction="http://tempuri.org/IProject5Services/AddStaffMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MemberExists">
+      <soap:operation soapAction="http://tempuri.org/IProject5Services/MemberExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StaffExists">
+      <soap:operation soapAction="http://tempuri.org/IProject5Services/StaffExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchForWsdl">
+      <soap:operation soapAction="http://tempuri.org/IProject5Services/SearchForWsdl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsOperations">
+      <soap:operation soapAction="http://tempuri.org/IProject5Services/WsOperations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsOperationNames">
+      <soap:operation soapAction="http://tempuri.org/IProject5Services/WsOperationNames" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsOperationInput">
+      <soap:operation soapAction="http://tempuri.org/IProject5Services/WsOperationInput" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsOperationReturn">
+      <soap:operation soapAction="http://tempuri.org/IProject5Services/WsOperationReturn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddToList">
+      <soap:operation soapAction="http://tempuri.org/IProject5Services/AddToList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadMyList">
+      <soap:operation soapAction="http://tempuri.org/IProject5Services/LoadMyList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadStaff">
+      <soap:operation soapAction="http://tempuri.org/IProject5Services/LoadStaff" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Project5Services">
+    <wsdl:port name="BasicHttpBinding_IProject5Services" binding="tns:BasicHttpBinding_IProject5Services">
+      <soap:address location="http://webstrar25.fulton.asu.edu/Page1/Project5Services.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
